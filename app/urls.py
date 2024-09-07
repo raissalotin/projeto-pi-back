@@ -12,6 +12,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from core.views import UserViewSet
 from core.views import ProdutoViewSet
 from core.views import CategoriaViewSet
+from core.views import CarrinhoViewSet
 
 
 router = DefaultRouter()
@@ -19,6 +20,7 @@ router = DefaultRouter()
 router.register(r"usuarios", UserViewSet, basename="usuarios")
 router.register(r"produtos", ProdutoViewSet, )
 router.register(r"categorias", CategoriaViewSet, )
+router.register(r"carrinho", CarrinhoViewSet) 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
