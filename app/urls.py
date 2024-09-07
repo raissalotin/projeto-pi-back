@@ -13,6 +13,7 @@ from core.views import UserViewSet
 from core.views import ProdutoViewSet
 from core.views import CategoriaViewSet
 
+
 router = DefaultRouter()
 
 router.register(r"usuarios", UserViewSet, basename="usuarios")
